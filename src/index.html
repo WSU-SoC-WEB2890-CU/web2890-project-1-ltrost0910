@@ -8,6 +8,10 @@
     <meta name="description" content="CarDeal" />
 
     <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
   </head>
 
   <body>
@@ -36,7 +40,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">How It Works</a>
+              <a class="nav-link" href="#howitworks">How It Works</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
@@ -57,28 +61,41 @@
       <div class="container">
         <div class="row text-white align-items-center h-100 w-100">
           <div class="col-md-6 text-center py-5">
-            <h1 class="display-1">
-              <span>We Buy 'ANY' Car!</span>
-            </h1>
+            <h1 class="display-2 mb-4">We Buy 'ANY' Car!</h1>
+            <p class="fs-4 lead">Get Your Free Online Valuation Now!</p>
           </div>
-          <div class="col-md-6 p-5">
+          <div class="col-md-6 mt-4 p-5">
             <div class="form">
-              <h2 class="text-center mb-4">What's your car worth?</h2>
               <form action="#" class="row">
                 <div class="col-lg-12 mb-3">
-                  <input type="text" placeholder="Year" id="carYear" class="shadow form-control form-control-lg" />
+                  <input
+                    type="text"
+                    placeholder="Select Year"
+                    id="carYear"
+                    class="shadow form-control form-control-lg"
+                  />
                 </div>
                 <div class="col-lg-12 mb-3">
-                  <input type="text" placeholder="Make" id="carMake" class="shadow form-control form-control-lg" />
+                  <input
+                    type="text"
+                    placeholder="Select Make"
+                    id="carMake"
+                    class="shadow form-control form-control-lg"
+                  />
                 </div>
                 <div class="col-lg-12 mb-3">
-                  <input type="text" placeholder="Model" id="carModel" class="shadow form-control form-control-lg" />
+                  <input
+                    type="text"
+                    placeholder="Select Model"
+                    id="carModel"
+                    class="shadow form-control form-control-lg"
+                  />
                 </div>
                 <div class="col-lg-12 mb-3 text-center">
                   <h6>- OR -</h6>
                 </div>
                 <div class="col-lg-12 mb-3">
-                  <input type="text" placeholder="VIN" id="carVIN" class="shadow form-control form-control-lg" />
+                  <input type="text" placeholder="Enter VIN" id="carVIN" class="shadow form-control form-control-lg" />
                 </div>
 
                 <div class="text-center d-grid mt-5">
@@ -87,7 +104,7 @@
                     class="btn btn-primary border border-white rounded-pill pt-3 pb-3"
                     id="submitButton"
                   >
-                    Get Offer!
+                    Get An Offer!
                     <i class="bi bi-send"></i>
                   </button>
                 </div>
@@ -96,6 +113,121 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="howitworks">
+      <div class="container py-5">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="display-4 fw-bold mb-4">How It Works</h2>
+            <p class="">
+              The process of selling your car with CarDeal is easy and straightforward. Our employees will keep you
+              informed so you will understand what happens next.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 d-flex align-items-stretch">
+          <div class="col-md-4 text-center d-flex">
+            <div class="p-4 bg-light rounded shadow-sm">
+              <div class="mb-3">
+                <i class="bi bi-1-circle-fill text-primary" style="font-size: 2rem"></i>
+              </div>
+              <h5 class="fw-bold mb-4">Tell us about your vehicle</h5>
+              <p class="text-muted flex-grow-1">
+                Fill out a form that provides accurate information about your car (i.e., VIN, year, make, model,
+                mileage, condition of car, accidents).
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center d-flex">
+            <div class="p-4 bg-light rounded shadow-sm">
+              <div class="mb-3">
+                <i class="bi bi-2-circle-fill text-primary" style="font-size: 2rem"></i>
+              </div>
+              <h5 class="fw-bold mb-4">Get your offer</h5>
+              <p class="text-muted flex-grow-1">Get an instant offer on your car that is good for 7 days.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center d-flex">
+            <div class="p-4 bg-light rounded shadow-sm">
+              <div class="mb-3">
+                <i class="bi bi-3-circle-fill text-primary" style="font-size: 2rem"></i>
+              </div>
+              <h5 class="fw-bold mb-4">Provide access to car</h5>
+              <p class="text-muted flex-grow-1">Deliver car to closest CarDeal location or have us come get it.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center d-flex">
+            <div class="p-4 bg-light rounded shadow-sm">
+              <div class="mb-3">
+                <i class="bi bi-4-circle-fill text-primary" style="font-size: 2rem"></i>
+              </div>
+              <h5 class="fw-bold mb-4">Documentation</h5>
+              <p class="text-muted flex-grow-1">Provide title proving your ownership of the vehicle.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center d-flex">
+            <div class="p-4 bg-light rounded shadow-sm">
+              <div class="mb-3">
+                <i class="bi bi-5-circle-fill text-primary" style="font-size: 2rem"></i>
+              </div>
+              <h5 class="fw-bold mb-4">Inspection</h5>
+              <p class="text-muted flex-grow-1">CarDeal will inspect your car to verify its condition.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center d-flex">
+            <div class="p-4 bg-light rounded shadow-sm">
+              <div class="mb-3">
+                <i class="bi bi-6-circle-fill text-primary" style="font-size: 2rem"></i>
+              </div>
+              <h5 class="fw-bold mb-4">Get Paid!</h5>
+              <p class="text-muted flex-grow-1">
+                If everything checks out, you can decide if you want to accept the offer. You can go with cash or apply
+                the money to a trade in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <h2>The Advantages of Selling Your Car to Cardeal section</h2>
+      <p>
+        If you're like most people, you don't look forward to dealing with a pushy car salesperson. Cardeal offers a
+        better way for you to sell or trade in your. See the following reasons people choose Cardeal.
+      </p>
+      <ul>
+        <li>Our offers are very competitive; you'll get more money for your car than a standard dealer trade-in.</li>
+        <li>
+          We are happy to take off your hands "less-than-perfect" cars that have body damage, mechanical problems, or
+          excess wear and tear.
+        </li>
+        <li>We'll buy your car and you aren't required to buy one from us.</li>
+        <li>
+          Avoid getting ripped off by scammers and swindlers. We make the process of selling your car fast, easy and
+          safe.
+        </li>
+        <li>
+          Cardeal employees are dedicated and professional. This has earned us an A+ BBB rating plus thousands of
+          reviews from satisfied customers.
+        </li>
+        <li>make and model driven ond American roads.</li>
+        <li>
+          We have locations in all 50 states making it easy for you to deliver your car or have us come to you to pick
+          up your car.
+        </li>
+        <li>
+          Cardeal cares about people as much as cars. We have donated over a million meals to Feeding America and Meals
+          on Wheels.
+        </li>
+      </ul>
     </section>
 
     <!-- Your HTML goes here -->
