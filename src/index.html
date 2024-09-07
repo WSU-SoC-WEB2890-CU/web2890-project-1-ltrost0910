@@ -31,7 +31,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav fw-bold">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -57,49 +57,36 @@
       <div class="container">
         <div class="row text-white align-items-center h-100 w-100">
           <div class="col-md-6 text-center py-5">
-            <h1 class="display-2 fw-light">
+            <h1 class="display-1">
               <span>We Buy 'ANY' Car!</span>
             </h1>
           </div>
           <div class="col-md-6 p-5">
             <div class="form">
-              <h4 class="display-3--title text-center mb-4">What's your car worth?</h4>
+              <h2 class="text-center mb-4">What's your car worth?</h2>
               <form action="#" class="row">
-                <div class="col-lg-6 col-md mb-3">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    id="inputFirstName"
-                    class="shadow form-control form-control-lg"
-                  />
-                </div>
-                <div class="col-lg-6 col-md mb-3">
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    id="inputLastName"
-                    class="shadow form-control form-control-lg"
-                  />
+                <div class="col-lg-12 mb-3">
+                  <input type="text" placeholder="Year" id="carYear" class="shadow form-control form-control-lg" />
                 </div>
                 <div class="col-lg-12 mb-3">
-                  <input
-                    type="email"
-                    placeholder="Email address"
-                    id="inputEmail"
-                    class="shadow form-control form-control-lg"
-                  />
+                  <input type="text" placeholder="Make" id="carMake" class="shadow form-control form-control-lg" />
                 </div>
                 <div class="col-lg-12 mb-3">
-                  <textarea
-                    name="message"
-                    placeholder="Message"
-                    id="message"
-                    rows="4"
-                    class="shadow form-control form-control-lg"
-                  ></textarea>
+                  <input type="text" placeholder="Model" id="carModel" class="shadow form-control form-control-lg" />
                 </div>
+                <div class="col-lg-12 mb-3 text-center">
+                  <h6>- OR -</h6>
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <input type="text" placeholder="VIN" id="carVIN" class="shadow form-control form-control-lg" />
+                </div>
+
                 <div class="text-center d-grid mt-5">
-                  <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3" id="submitButton">
+                  <button
+                    type="button"
+                    class="btn btn-primary border border-white rounded-pill pt-3 pb-3"
+                    id="submitButton"
+                  >
                     Get Offer!
                     <i class="bi bi-send"></i>
                   </button>
