@@ -1,3 +1,27 @@
 /* Your styles go here */
+@import "custom";
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5rem 0 0 0; /* Adjust padding for space above the content */
+  width: 100%;
+  height: fit-content; /* Ensure height is enough to fit both columns */
+  display: flex;
+  align-items: center;
+}
+
+/* Optional adjustments */
+.form {
+  max-width: 100%; /* Prevent overflow */
+}
+
+.text-white h1,
+.form {
+  margin-bottom: 0;
+}
