@@ -25,3 +25,27 @@
 .form {
   margin-bottom: 0;
 }
+
+/* card styling */
+// Define variables for text sizes
+$card-title-font-size: 1.5rem;
+$card-text-font-size: 1rem;
+
+// Style for the custom card class
+.my-card {
+  text-align: center;
+
+  .card-title {
+    font-size: $card-title-font-size;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .card-text {
+    font-size: $card-text-font-size;
+  }
+
+  // .card-body {
+  //   background-color: $secondary;
+  // }
+}

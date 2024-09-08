@@ -7,4 +7,4 @@ import "bootstrap"
 //   img.src = im_url
 // }
 
-// preload_image("/images/ford_fusion.png")
+// preload_image("/images/ford_fusion.webp")

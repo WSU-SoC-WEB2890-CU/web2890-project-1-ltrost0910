@@ -19,7 +19,7 @@
       <div class="container-fluid mx-3">
         <div class="border border-primary p-3 mx-3" style="width: 200px; background-color: white">
           <a class="navbar-brand" href="#">
-            <img src="images/logoV1.svg" alt="CarDeal logo horizontal" />
+            <img class="img-fluid" src="images/logoV1.svg" alt="CarDeal logo horizontal" />
           </a>
         </div>
         <!-- <h1 class="fw-bold text-primary">CarDeal</h1> -->
@@ -68,6 +68,12 @@
             <div class="form">
               <form action="#" class="row">
                 <div class="col-lg-12 mb-3">
+                  <input type="text" placeholder="Enter VIN" id="carVIN" class="shadow form-control form-control-lg" />
+                </div>
+                <div class="col-lg-12 mb-3 text-center">
+                  <h6>- OR -</h6>
+                </div>
+                <div class="col-lg-12 mb-3">
                   <input
                     type="text"
                     placeholder="Select Year"
@@ -90,12 +96,6 @@
                     id="carModel"
                     class="shadow form-control form-control-lg"
                   />
-                </div>
-                <div class="col-lg-12 mb-3 text-center">
-                  <h6>- OR -</h6>
-                </div>
-                <div class="col-lg-12 mb-3">
-                  <input type="text" placeholder="Enter VIN" id="carVIN" class="shadow form-control form-control-lg" />
                 </div>
 
                 <div class="text-center d-grid mt-5">
@@ -127,70 +127,72 @@
           </div>
         </div>
 
-        <div class="row g-4 d-flex align-items-stretch">
-          <div class="col-md-4 text-center d-flex">
-            <div class="p-4 bg-light rounded shadow-sm">
-              <div class="mb-3">
-                <i class="bi bi-1-circle-fill text-primary" style="font-size: 2rem"></i>
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card my-card bg-light shadow-sm flex-fill">
+                <i class="bi bi-1-circle-fill text-primary mb-3" style="font-size: 2rem"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Tell us about your vehicle</h5>
+                  <p class="card-text">
+                    Fill out a form that provides accurate information about your car (i.e., VIN, year, make, model,
+                    mileage, condition of car, accidents).
+                  </p>
+                </div>
               </div>
-              <h5 class="fw-bold mb-4">Tell us about your vehicle</h5>
-              <p class="text-muted flex-grow-1">
-                Fill out a form that provides accurate information about your car (i.e., VIN, year, make, model,
-                mileage, condition of car, accidents).
-              </p>
             </div>
-          </div>
 
-          <div class="col-md-4 text-center d-flex">
-            <div class="p-4 bg-light rounded shadow-sm">
-              <div class="mb-3">
-                <i class="bi bi-2-circle-fill text-primary" style="font-size: 2rem"></i>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card my-card bg-light shadow-sm flex-fill">
+                <i class="bi bi-2-circle-fill text-primary mb-3" style="font-size: 2rem"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Get your offer</h5>
+                  <p class="card-text">Get an instant offer on your car that is good for 7 days.</p>
+                </div>
               </div>
-              <h5 class="fw-bold mb-4">Get your offer</h5>
-              <p class="text-muted flex-grow-1">Get an instant offer on your car that is good for 7 days.</p>
             </div>
-          </div>
 
-          <div class="col-md-4 text-center d-flex">
-            <div class="p-4 bg-light rounded shadow-sm">
-              <div class="mb-3">
-                <i class="bi bi-3-circle-fill text-primary" style="font-size: 2rem"></i>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card my-card bg-light shadow-sm flex-fill">
+                <i class="bi bi-3-circle-fill text-primary mb-3" style="font-size: 2rem"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Provide access to car</h5>
+                  <p class="card-text">Deliver car to closest CarDeal location or have us come get it.</p>
+                </div>
               </div>
-              <h5 class="fw-bold mb-4">Provide access to car</h5>
-              <p class="text-muted flex-grow-1">Deliver car to closest CarDeal location or have us come get it.</p>
             </div>
-          </div>
 
-          <div class="col-md-4 text-center d-flex">
-            <div class="p-4 bg-light rounded shadow-sm">
-              <div class="mb-3">
-                <i class="bi bi-4-circle-fill text-primary" style="font-size: 2rem"></i>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card my-card bg-light shadow-sm flex-fill">
+                <i class="bi bi-4-circle-fill text-primary mb-3" style="font-size: 2rem"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Documentation</h5>
+                  <p class="card-text">Provide title proving your ownership of the vehicle.</p>
+                </div>
               </div>
-              <h5 class="fw-bold mb-4">Documentation</h5>
-              <p class="text-muted flex-grow-1">Provide title proving your ownership of the vehicle.</p>
             </div>
-          </div>
 
-          <div class="col-md-4 text-center d-flex">
-            <div class="p-4 bg-light rounded shadow-sm">
-              <div class="mb-3">
-                <i class="bi bi-5-circle-fill text-primary" style="font-size: 2rem"></i>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card my-card bg-light shadow-sm flex-fill">
+                <i class="bi bi-5-circle-fill text-primary mb-3" style="font-size: 2rem"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Inspection</h5>
+                  <p class="card-text">CarDeal will inspect your car to verify its condition.</p>
+                </div>
               </div>
-              <h5 class="fw-bold mb-4">Inspection</h5>
-              <p class="text-muted flex-grow-1">CarDeal will inspect your car to verify its condition.</p>
             </div>
-          </div>
 
-          <div class="col-md-4 text-center d-flex">
-            <div class="p-4 bg-light rounded shadow-sm">
-              <div class="mb-3">
-                <i class="bi bi-6-circle-fill text-primary" style="font-size: 2rem"></i>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card my-card bg-light shadow-sm flex-fill">
+                <i class="bi bi-6-circle-fill text-primary mb-3" style="font-size: 2rem"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Get Paid!</h5>
+                  <p class="card-text">
+                    If everything checks out, you can decide if you want to accept the offer. You can go with cash or
+                    apply the money to a trade-in.
+                  </p>
+                </div>
               </div>
-              <h5 class="fw-bold mb-4">Get Paid!</h5>
-              <p class="text-muted flex-grow-1">
-                If everything checks out, you can decide if you want to accept the offer. You can go with cash or apply
-                the money to a trade in.
-              </p>
             </div>
           </div>
         </div>
@@ -233,7 +235,7 @@
     <!-- Your HTML goes here -->
     <h1 class="display-2 text-center my-5 py-5 mx-auto w-75">
       <span class="d-block pt-5">
-        <img src="images/logoV1.svg" alt="CarDeal logo horizontal" />
+        <img class="img-fluid" src="images/logoV1.svg" alt="CarDeal logo horizontal" />
       </span>
       <span class="d-block py-5">
         Project 1: The <span class="bg-dark text-light px-5 fw-bold">CarDeal</span> project
