@@ -28,12 +28,14 @@
 
 /* card styling */
 // Define variables for text sizes
+// was 1.5rem and 1rem
 $card-title-font-size: 1.5rem;
 $card-text-font-size: 1rem;
 
 // Style for the custom card class
 .my-card {
-  text-align: center;
+  // text-align: center;
+  text-align: start;
 
   .card-title {
     font-size: $card-title-font-size;
