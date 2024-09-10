@@ -90,3 +90,20 @@ $card-text-font-size: 1rem;
 .icon-car {
   color: $strong-pink;
 }
+
+//testimonials
+.testimonial {
+  max-width: 600px;
+  text-align: center;
+}
+
+.carousel-indicators li {
+  background-color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $primary; /* control arrows */
+  border-radius: 50%;
+  padding: 15px;
+}
