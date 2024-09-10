@@ -34,8 +34,9 @@ $card-text-font-size: 1rem;
 
 // Style for the custom card class
 .my-card {
-  // text-align: center;
-  text-align: start;
+  text-align: center;
+  height: 100%;
+  border: 1px solid $primary;
 
   .card-title {
     font-size: $card-title-font-size;
@@ -45,9 +46,47 @@ $card-text-font-size: 1rem;
 
   .card-text {
     font-size: $card-text-font-size;
+    text-align: start;
+  }
+
+  i {
+    font-size: 2rem;
   }
 
   // .card-body {
   //   background-color: $secondary;
   // }
+}
+
+// style for the advantages list
+.advantages-list {
+  list-style: none;
+  padding-left: 0; /* Removes default padding */
+}
+
+.advantages-list li {
+  font-size: 16px;
+  padding-left: 40px; /* Create space for the icon */
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.advantages-list li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 24px;
+  margin-right: 1rem;
+}
+
+.icon-green {
+  color: green;
+}
+
+.icon-red {
+  color: red;
+}
+
+.icon-car {
+  color: $strong-pink;
 }
