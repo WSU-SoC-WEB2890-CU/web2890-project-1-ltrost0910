@@ -93,17 +93,32 @@ $card-text-font-size: 1rem;
 
 //testimonials
 .testimonial {
-  max-width: 600px;
+  max-width: 80%;
+  min-height: 280px;
+  padding: 3rem;
   text-align: center;
 }
 
-.carousel-indicators li {
-  background-color: black;
-}
-
+/* Customize the size of the arrow icon within the button */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: $primary; /* control arrows */
+  background-color: $primary; /*Circle color */
   border-radius: 50%;
-  padding: 15px;
+  padding: 25px;
+  margin: 5px;
+  width: 30px; /* Adjust to change the arrow size */
+  height: 30px; /* Adjust to change the arrow size */
+  background-size: 30px 30px; /* Ensure background size matches the icon size */
+}
+
+/* Change the default color of the indicators the lines beneath the slides */
+.carousel-indicators [data-bs-target] {
+  background-color: $primary; /* Set your desired color */
+  opacity: 0.5; /*  Adjust the opacity if needed */
+}
+
+/* Change the active indicator color */
+.carousel-indicators .active {
+  background-color: $primary; /* Set your active color */
+  opacity: 1; /* Make it fully opaque if needed */
 }
