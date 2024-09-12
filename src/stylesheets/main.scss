@@ -93,8 +93,8 @@ $card-text-font-size: 1rem;
 
 //testimonials
 .testimonial {
-  max-width: 80%;
-  min-height: 280px;
+  max-width: 75%;
+  // min-height: 310px;
   padding: 3rem;
   text-align: center;
 }
@@ -111,14 +111,17 @@ $card-text-font-size: 1rem;
   background-size: 30px 30px; /* Ensure background size matches the icon size */
 }
 
-/* Change the default color of the indicators the lines beneath the slides */
-.carousel-indicators [data-bs-target] {
-  background-color: $primary; /* Set your desired color */
-  opacity: 0.5; /*  Adjust the opacity if needed */
-}
-
-/* Change the active indicator color */
-.carousel-indicators .active {
-  background-color: $primary; /* Set your active color */
-  opacity: 1; /* Make it fully opaque if needed */
-}
+/* Change the  indicators (the lines beneath the slides) */
+// .carousel-indicators [data-bs-target] {
+//   background-color: $primary;
+//   opacity: 0.5;
+// }
+// .carousel-indicators .active {
+//   background-color: $primary;
+//   opacity: 1;
+// }
+// .carousel-indicators [data-bs-target] {
+//   border-radius: 50%;
+//   width: 15px;
+//   height: 15px;
+// }
