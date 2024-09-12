@@ -65,17 +65,16 @@ $card-text-font-size: 1rem;
 }
 
 .advantages-list li {
-  font-size: 16px;
-  padding-left: 40px; /* Create space for the icon */
-  padding-bottom: 1rem;
+  padding-left: 60px; /* Create space for the icon */
+  padding-bottom: 1.5rem;
   position: relative;
 }
 
 .advantages-list li i {
   position: absolute;
   left: 0;
-  top: 0;
-  font-size: 24px;
+  top: 2px;
+  font-size: 2rem;
   margin-right: 1rem;
 }
 
