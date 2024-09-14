@@ -1,9 +1,6 @@
 /* Your styles go here */
 @import "custom";
 
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
-
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp");
   background-size: cover;
@@ -58,6 +55,14 @@ $card-text-font-size: 1rem;
   // }
 }
 
+// ACCORDION OVERRIDES
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/> <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>  <path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+
 // style for the advantages list
 .advantages-list {
   list-style: none;
@@ -93,9 +98,12 @@ $card-text-font-size: 1rem;
 /* Testimonials */
 .testimonial {
   max-width: 75%;
-  padding-bottom: 3rem;
-  text-align: center;
+  //padding-bottom: 3rem;
+  // text-align: center;
   /* height: 360px; Adjust based on content */
+}
+.testimonial h5 {
+  text-align: center;
 }
 
 .carousel-item {
@@ -117,18 +125,48 @@ $card-text-font-size: 1rem;
 .starburst-container {
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 800px; /* Control the maximum size of the container */
+  min-width: 400px; /* Control the minimum size of the container */
+  margin: auto; /* Center the container */
+}
+
+.starburst-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.ff-quick {
+  font-family: "Quicksand", sans-serif;
+}
+
+.ffPoppins {
+  font-family: "Poppins", sans-serif;
 }
 
 .overlay-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  width: 75%; /* Adjust the width of the text container as needed */
+  text-align: center; // Center text inside overlay
   z-index: 1; /* Ensures text is above the image */
   color: $strong-pink; /* Change to make the text visible */
-  font-weight: bold;
 }
+
+// Media query to adjust image and text size for extra small screens
+//do i need this?
+@media (max-width: 400px) {
+  .starburst-container {
+    margin-top: 5rem;
+    max-width: 200px;
+    min-width: 200px;
+  }
+}
+
+// fs-1: 3rem
+// fs-2: 2.5rem
+// fs-3: 2rem
+// fs-4: 1.5rem
+// fs-5: 1.25rem
+// fs-6: 1rem
