@@ -1,5 +1,6 @@
 /* Your styles go here */
 @import "custom";
+@import "accordions";
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp");
@@ -27,10 +28,10 @@
 // Define variables for text sizes
 // was 1.5rem and 1rem
 $card-title-font-size: 1.5rem;
-$card-text-font-size: 1rem;
+$card-text-font-size: 0.9rem;
 
-// Style for the custom card class
-.my-card {
+// Style for the how it works (hiw) card class
+.hiw-card {
   text-align: center;
   height: 100%;
   border: 1px solid $primary;
@@ -139,7 +140,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   font-family: "Quicksand", sans-serif;
 }
 
-.ffPoppins {
+.ff-poppins {
   font-family: "Poppins", sans-serif;
 }
 
