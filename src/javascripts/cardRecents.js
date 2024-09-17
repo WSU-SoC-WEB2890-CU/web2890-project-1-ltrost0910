@@ -1,7 +1,7 @@
 const recents = [
   {
     title: "Toyota 4-Runner",
-    imagesrc: "images/toyota_4runner.png",
+    imagesrc: "/images/toyota_4runner.png",
     imagealt: "Toyota 4-Runner",
     year: "2001",
     mileage: "179,000 miles",
