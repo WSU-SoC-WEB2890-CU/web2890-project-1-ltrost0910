@@ -1,6 +1,7 @@
 /* Your styles go here */
 @import "custom";
 @import "accordions";
+@import "cards";
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp");
@@ -22,38 +23,6 @@
 .text-white h1,
 .form {
   margin-bottom: 0;
-}
-
-/* card styling */
-// Define variables for text sizes
-// was 1.5rem and 1rem
-$card-title-font-size: 1.5rem;
-$card-text-font-size: 0.9rem;
-
-// Style for the how it works (hiw) card class
-.hiw-card {
-  text-align: center;
-  height: 100%;
-  border: 1px solid $primary;
-
-  .card-title {
-    font-size: $card-title-font-size;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-
-  .card-text {
-    font-size: $card-text-font-size;
-    text-align: start;
-  }
-
-  i {
-    font-size: 2rem;
-  }
-
-  // .card-body {
-  //   background-color: $secondary;
-  // }
 }
 
 //how it works icons

@@ -1,0 +1,87 @@
+//recent purchases cards
+
+// Define variables for text sizes
+// was 1.5rem and 1rem
+$card-title-font-size: 1.5rem;
+$card-text-font-size: 0.9rem;
+
+.recent-card {
+  text-align: center;
+  height: 100%;
+  border: 1px solid $primary;
+  display: flex;
+  flex-direction: column; // Align children in a column
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Add smooth hover transitions
+
+  &:hover {
+    transform: scale(1.05); // Slight zoom effect on hover
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Slightly more pronounced shadow for depth
+  }
+
+  .card-img-top {
+    border-bottom: 1px solid $primary;
+    object-fit: cover; // Ensure the image is well-fitted
+    height: 200px; // Control image height
+  }
+
+  .card-header {
+    font-weight: bold;
+  }
+
+  .card-title {
+    font-size: $card-title-font-size;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: $primary; // Use primary color for titles
+  }
+
+  .card-text {
+    font-size: $card-text-font-size;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    line-height: 1.5; // Improve text readability
+  }
+
+  .price {
+    font-size: 1.25rem; // Make the price stand out
+    font-weight: bold;
+    color: $success; // Use a highlight color for the price
+    margin-bottom: 1rem;
+  }
+
+  i {
+    font-size: 2rem;
+    color: $primary; // Icon color matching the theme
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column; // Align children in a column
+    background-color: #f9f9f9; // Light gray
+    justify-content: space-between;
+  }
+
+  .btn-primary {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem; /* Smaller padding */
+    font-size: 0.875rem; /* Smaller font size */
+    font-weight: bold;
+    background-color: $primary;
+    border-color: $primary;
+    max-width: 150px; // Adjust the maximum width as needed
+    width: auto; // Ensure the button's width is based on its content
+    display: block;
+    margin: 1rem auto 0; // Center the button horizontally and add top margin
+    text-align: center; // Center text inside the button if needed
+
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+  }
+
+  .small-text {
+    font-size: 0.75rem; // Smaller font size for description
+    line-height: 1.5; // Adjust line height for better readability
+  }
+}
