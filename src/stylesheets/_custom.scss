@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/lato");
 @import url("https://fonts.cdnfonts.com/css/nextwave");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"); // Import Montserrat
 
 // THEME COLORS
 $teal-dark: #0d503c;
@@ -11,7 +12,7 @@ $footer: #151414;
 
 $primary: $teal-dark;
 $secondary: $teal-light;
-$font-family-base: "Montserrat";
+$font-family-base: "Montserrat", sans-serif;
 
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.scss";
