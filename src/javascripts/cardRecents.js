@@ -69,13 +69,14 @@ const recents = [
 const cardRecents = document.getElementById("cardRecents")
 
 recents.forEach((recent) => {
+  const imgString = `<img src="${recent.imgsrc}" class="card-img-top" alt="${recent.imagealt}">`;
   const cardItem = `
   <div class="col-md-4 d-flex align-items-stretch">
     <div class="card recent-card shadow-sm h-100 flex-fill">
       <img src="${recent.imgsrc}" class="card-img-top" alt="${recent.imagealt}">
       <h5 class="card-header bg-secondary">${recent.title}</h5>
       <div class="card-body">
-      <img class="img-fluid" src="../images/logoV1.svg" alt="CarDeal logo horizontal" />
+        ${imgString}
         <p class="card-text">Image URL ${recent.imgsrc}</p>
         <p class="card-text">Image Alt ${recent.imagealt}</p>
         <p class="card-text text-center fw-bold">${recent.year} | ${recent.mileage} | ${recent.price}</p>
