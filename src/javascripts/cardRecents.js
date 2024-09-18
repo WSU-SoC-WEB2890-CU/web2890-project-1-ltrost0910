@@ -72,7 +72,14 @@ const recents = [
 const cardRecents = document.getElementById("cardRecents")
 
 recents.forEach((recent) => {
+  const imgTest = `${baseUrl}toyota_4runner.png`
   const cardItem = `
+  <div>
+    <h5>This is a test of the image</h5>
+    <p>
+      <img src="${imgTest}" alt="Toyota 4-Runner">
+    </p>
+  </div>
   <div class="col-md-4 d-flex align-items-stretch">
     <div class="card recent-card shadow-sm h-100 flex-fill">
       <img src="${baseUrl}${recent.imgsrc}" class="card-img-top" alt="${recent.imagealt}">
