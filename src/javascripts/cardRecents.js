@@ -1,7 +1,7 @@
 const recents = [
   {
     title: "Toyota 4-Runner",
-    imgsrc: "toyota_4runner.png",
+    imgsrc: "images/toyota_4runner.png",
     imagealt: "Toyota 4-Runner",
     year: "2001",
     mileage: "179,000 miles",
@@ -75,6 +75,7 @@ recents.forEach((recent) => {
       <img src="${recent.imgsrc}" class="card-img-top" alt="${recent.imagealt}">
       <h5 class="card-header bg-secondary">${recent.title}</h5>
       <div class="card-body">
+            <img src="${recent.imgsrc}" class="" alt="${recent.imagealt}">
         <p class="card-text">Image URL ${recent.imgsrc}</p>
         <p class="card-text">Image Alt ${recent.imagealt}</p>
         <p class="card-text text-center fw-bold">${recent.year} | ${recent.mileage} | ${recent.price}</p>
