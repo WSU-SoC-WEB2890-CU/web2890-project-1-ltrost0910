@@ -75,7 +75,7 @@ recents.forEach((recent) => {
       <img src="${recent.imgsrc}" class="card-img-top" alt="${recent.imagealt}">
       <h5 class="card-header bg-secondary">${recent.title}</h5>
       <div class="card-body">
-      <img class="img-fluid" src="images/logoV1.svg" alt="CarDeal logo horizontal" />
+      <img class="img-fluid" src="./images/logoV1.svg" alt="CarDeal logo horizontal" />
         <p class="card-text">Image URL ${recent.imgsrc}</p>
         <p class="card-text">Image Alt ${recent.imagealt}</p>
         <p class="card-text text-center fw-bold">${recent.year} | ${recent.mileage} | ${recent.price}</p>
