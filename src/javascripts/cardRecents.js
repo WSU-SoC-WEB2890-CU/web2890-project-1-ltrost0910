@@ -1,7 +1,7 @@
 const recents = [
   {
     title: "Toyota 4-Runner",
-    imagesrc: "'images/toyota_4runner.png'",
+    imgsrc: "images/toyota_4runner.png",
     imagealt: "Toyota 4-Runner",
     year: "2001",
     mileage: "179,000 miles",
@@ -14,7 +14,7 @@ const recents = [
   },
   {
     title: "Ford Fusion",
-    imagesrc: "images/ford_fusion.png",
+    imgsrc: "images/ford_fusion.png",
     imagealt: "Ford Fusion",
     year: "2010",
     mileage: "59,000 miles",
@@ -27,7 +27,7 @@ const recents = [
   },
   {
     title: "Honda Civic",
-    imagesrc: "images/honda_civic_sedan.png",
+    imgsrc: "images/honda_civic_sedan.png",
     imagealt: "Honda Civic",
     year: "2013",
     mileage: "131,092 miles",
@@ -40,7 +40,7 @@ const recents = [
   },
   {
     title: "Ford F-150 Truck",
-    imagesrc: "images/ford_f150_truck.png",
+    imgsrc: "images/ford_f150_truck.png",
     imagealt: "Ford F-150 Truck",
     year: "2014",
     mileage: "140,000 miles",
@@ -53,7 +53,7 @@ const recents = [
   },
   {
     title: "Hyundai Elantra",
-    imagesrc: "images/hyundai_elantra.png",
+    imgsrc: "images/hyundai_elantra.png",
     imagealt: "Hyundai Elantra",
     year: "2011",
     mileage: "113,325 miles",
@@ -72,10 +72,10 @@ recents.forEach((recent) => {
   const cardItem = `
   <div class="col-md-4 d-flex align-items-stretch">
     <div class="card recent-card shadow-sm h-100 flex-fill">
-      <img src="${recent.imagesrc}" class="card-img-top" alt="${recent.imagealt}">
+      <img src="${recent.imgsrc}" class="card-img-top" alt="${recent.imagealt}">
       <h5 class="card-header bg-secondary">${recent.title}</h5>
       <div class="card-body">
-        <p class="card-text>Image URL ${recent.imagesrc}</p>
+        <p class="card-text>Image URL ${recent.imgsrc}</p>
         <p class="card-text>Image Alt ${recent.imagealt}</p>
         <p class="card-text text-center fw-bold">${recent.year} | ${recent.mileage} | ${recent.price}</p>
         <p class="card-text small-text mb-0"><strong>Style</strong>: ${recent.bodystyle}</p>
