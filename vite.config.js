@@ -17,12 +17,13 @@ glob
 
 export default defineConfig({
   root: "src",
+  base: "/",
   build: {
     manifest: true,
     outDir: "../dist",
     emptyOutDir: true,
     rollupOptions: {
-      input
+      input,
     },
   },
   server: {
