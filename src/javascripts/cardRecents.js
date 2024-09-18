@@ -14,7 +14,7 @@ const recents = [
   },
   {
     title: "Ford Fusion",
-    imgsrc: "images/ford_fusion.png",
+    imgsrc: "/images/ford_fusion.png",
     imagealt: "Ford Fusion",
     year: "2010",
     mileage: "59,000 miles",
@@ -27,7 +27,7 @@ const recents = [
   },
   {
     title: "Honda Civic",
-    imgsrc: "images/honda_civic_sedan.png",
+    imgsrc: "/images/honda_civic_sedan.png",
     imagealt: "Honda Civic",
     year: "2013",
     mileage: "131,092 miles",
@@ -40,7 +40,7 @@ const recents = [
   },
   {
     title: "Ford F-150 Truck",
-    imgsrc: "images/ford_f150_truck.png",
+    imgsrc: "/images/ford_f150_truck.png",
     imagealt: "Ford F-150 Truck",
     year: "2014",
     mileage: "140,000 miles",
@@ -53,7 +53,7 @@ const recents = [
   },
   {
     title: "Hyundai Elantra",
-    imgsrc: "images/hyundai_elantra.png",
+    imgsrc: "/images/hyundai_elantra.png",
     imagealt: "Hyundai Elantra",
     year: "2011",
     mileage: "113,325 miles",
