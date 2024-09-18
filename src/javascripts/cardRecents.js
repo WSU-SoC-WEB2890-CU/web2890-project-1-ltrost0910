@@ -76,6 +76,7 @@ recents.forEach((recent) => {
       <h5 class="card-header bg-secondary">${recent.title}</h5>
       <div class="card-body">
         <p class="card-text>Image URL ${recent.imagesrc}</p>
+        <p class="card-text>Image Alt ${recent.imagealt}</p>
         <p class="card-text text-center fw-bold">${recent.year} | ${recent.mileage} | ${recent.price}</p>
         <p class="card-text small-text mb-0"><strong>Style</strong>: ${recent.bodystyle}</p>
         <p class="card-text small-text mb-0"><strong>Condition</strong>: ${recent.condition}</p>
