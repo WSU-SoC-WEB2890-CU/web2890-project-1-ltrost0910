@@ -4,7 +4,9 @@
 @import "cards";
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6));
+  background-image: url("/images/ford_fusion.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
