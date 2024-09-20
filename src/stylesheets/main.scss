@@ -1,3 +1,184 @@
 /* Your styles go here */
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "custom";
+@import "accordions";
+@import "cards";
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5rem 0 0 0; /* Adjust padding for space above the content */
+  width: 100%;
+  height: fit-content; /* Ensure height is enough to fit both columns */
+  display: flex;
+  align-items: center;
+}
+
+/* hero form */
+.form {
+  max-width: 100%; /* Prevent overflow */
+}
+
+.text-white h1,
+.form {
+  margin-bottom: 0;
+}
+
+//how it works icons
+
+.hiw-icon-container {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-color: $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Ensures the icon fits within the circle */
+  margin-top: 1rem; /* Adjust spacing as needed */
+}
+
+.hiw-icon {
+  max-width: 60%; /* Adjust icon size as needed */
+  height: auto;
+}
+
+// style for the advantages list
+.advantages-list {
+  list-style: none;
+  padding-left: 0; /* Removes default padding */
+}
+
+.advantages-list li {
+  padding-left: 60px; /* Create space for the icon */
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.advantages-list li i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.icon-green {
+  color: green;
+}
+
+.icon-red {
+  color: red;
+}
+
+.icon-car {
+  color: $strong-pink;
+}
+
+/* Testimonials */
+.testimonial {
+  max-width: 75%;
+  //padding-bottom: 3rem;
+  // text-align: center;
+  /* height: 360px; Adjust based on content */
+}
+.testimonial h5 {
+  text-align: center;
+}
+
+.carousel-item {
+  height: 100%;
+  min-height: 230px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $primary; /* Circle color */
+  border-radius: 50%;
+  padding: 25px;
+  margin: 5px;
+  width: 30px; /* Adjust to change the arrow size */
+  height: 30px; /* Adjust to change the arrow size */
+  background-size: 30px 30px; /* Ensure background size matches the icon size */
+}
+
+.starburst-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Control the maximum size of the container */
+  min-width: 400px; /* Control the minimum size of the container */
+  margin: auto; /* Center the container */
+}
+
+.starburst-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.ff-quick {
+  font-family: "Quicksand", sans-serif;
+}
+
+.ff-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  width: 75%; /* Adjust the width of the text container as needed */
+  text-align: center; // Center text inside overlay
+  z-index: 1; /* Ensures text is above the image */
+  color: $strong-pink; /* Change to make the text visible */
+}
+
+// Media query to adjust image and text size for extra small screens
+//do i need this?
+@media (max-width: 400px) {
+  .starburst-container {
+    margin-top: 5rem;
+    max-width: 200px;
+    min-width: 200px;
+  }
+  .overlay-text h1 {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .adv-header-icon i {
+    transform: rotate(90deg) !important;
+  }
+}
+
+// fs-1: 3rem
+// fs-2: 2.5rem
+// fs-3: 2rem
+// fs-4: 1.5rem
+// fs-5: 1.25rem
+// fs-6: 1rem
+
+/* cta section image */
+.girls-car-img {
+  height: auto; /* Let the image maintain its natural height */
+  max-height: 250px; /* Limit the height so it doesn’t stretch the column */
+  object-fit: cover;
+  object-position: center;
+}
+
+.cta-logo {
+  height: auto; /* Natural height for the logo */
+  max-height: 250px; /* Limit the height to control stretching */
+  object-fit: cover;
+}
+
+.flex-grow-1 {
+  flex-grow: 1; /* Makes the div grow to take up remaining space */
+}
+
+.custom-text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

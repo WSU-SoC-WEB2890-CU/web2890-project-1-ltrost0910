@@ -1,0 +1,39 @@
+// Accordion Styling
+
+$accordion-padding: 0.5rem;
+$accordion-border-color: lighten($secondary, 20%);
+$transition-speed: 0.3s;
+
+.accordion {
+  // border: 1px solid $accordion-border-color;
+  // border-radius: 0.25rem;
+
+  .accordion-item-wrapper {
+    margin-bottom: 0.5rem; // Space between accordion items
+  }
+
+  .accordion-item {
+    border-bottom: 5px solid $accordion-border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .accordion-header {
+      width: 100%;
+      padding: $accordion-padding;
+      background-color: $secondary;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color $transition-speed;
+      text-align: left;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: darken($secondary, 10%);
+      }
+    }
+  }
+}

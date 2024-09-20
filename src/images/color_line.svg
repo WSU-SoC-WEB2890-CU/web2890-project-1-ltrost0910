@@ -1,0 +1,13 @@
+<svg width="100%" height="38" xmlns="http://www.w3.org/2000/svg">
+  <!-- Strong Pink Line -->
+  <rect width="100%" height="5" y="0" fill="#c92052" />
+
+  <!-- Dark Teal Lighter Line -->
+  <rect width="100%" height="8" y="5" fill="#137a5d" />
+
+  <!-- Medium Teal Line -->
+  <rect width="100%" height="10" y="13" fill="#19a27e" />
+
+  <!-- Light Teal Line -->
+  <rect width="100%" height="15" y="23" fill="#20c997" />
+</svg>

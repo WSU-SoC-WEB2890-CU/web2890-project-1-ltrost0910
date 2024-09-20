@@ -1,0 +1,31 @@
+// style for the advantages list
+.advantages-list {
+  list-style: none;
+  padding-left: 0; /* Removes default padding */
+}
+
+.advantages-list li {
+  padding-left: 60px; /* Create space for the icon */
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.advantages-list li i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.icon-green {
+  color: green;
+}
+
+.icon-red {
+  color: red;
+}
+
+.icon-car {
+  color: $strong-pink;
+}
