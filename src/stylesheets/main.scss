@@ -4,7 +4,7 @@
 @import "cards";
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp"); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/images/ford_fusion.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,6 +148,11 @@
     padding: 10px;
   }
 }
+@media (max-width: 767px) {
+  .adv-header-icon i {
+    transform: rotate(90deg) !important;
+  }
+}
 
 // fs-1: 3rem
 // fs-2: 2.5rem
@@ -176,10 +181,4 @@
 
 .custom-text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 767px) {
-  .adv-header-icon i {
-    transform: rotate(90deg) !important;
-  }
 }
